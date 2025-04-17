@@ -1,8 +1,7 @@
 ﻿namespace RedNeuronal_ProyectoFinal.Model
 {
-    /// <summary>
-    /// Representa los gradientes acumulados para una neurona durante un mini-batch.
-    /// </summary>
+    // Representa los gradientes acumulados para una neurona durante un mini-batch.
+
     public class Gradient
     {
         public double[] WeightGradients;

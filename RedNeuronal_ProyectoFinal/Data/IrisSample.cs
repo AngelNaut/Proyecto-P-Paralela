@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace RedNeuronal_ProyectoFinal.Data
 {
-    /// <summary>
- /// Representa una muestra del dataset Iris.
- /// Incluye las 4 características y la especie.
- /// </summary>
+ // Representa una muestra del dataset Iris.
+ // Incluye las 4 características y la especie.
+
     public class IrisSample
     {
         [Name("sepal.length")]
@@ -28,9 +27,7 @@ namespace RedNeuronal_ProyectoFinal.Data
         [Name("variety")]
         public string Species { get; set; }
 
-        /// <summary>
-        /// Retorna las características en un arreglo de double.
-        /// </summary>
+        // Retorna las características en un arreglo de double.
         public double[] GetFeatures() => new double[] { SepalLength, SepalWidth, PetalLength, PetalWidth };
     }
 }

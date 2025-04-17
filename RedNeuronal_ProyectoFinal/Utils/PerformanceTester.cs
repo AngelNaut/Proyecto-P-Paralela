@@ -29,7 +29,7 @@ namespace RedNeuronal_ProyectoFinal.Utils
             parallelNN.TrainWithMiniBatches(trainInputs, trainTargets, epochs, batchSize: 32);
             watchPar.Stop();
 
-            // ✅ Usamos una función anónima para extraer solo la salida final
+            //Usamos una función anónima para extraer solo la salida final
             double accPar = EvaluationHelper.EvaluateAccuracy(
                 input => parallelNN.ForwardWithOutputs(input).Last(),
                 testInputs, testTargets

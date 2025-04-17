@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RedNeuronal_ProyectoFinal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+620b1126fcc0d042a3049c84dd0ff78f273f8ff4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25d55111f07b10afd9b6b84fbe3d4812fb3f80c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("RedNeuronal_ProyectoFinal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RedNeuronal_ProyectoFinal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

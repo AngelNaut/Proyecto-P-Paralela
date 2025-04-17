@@ -21,9 +21,9 @@ namespace RedNeuronal_ProyectoFinal.Services
             LearningRate = learningRate;
         }
 
-        /// <summary>
-        /// Propagación hacia adelante con salidas por capa.
-        /// </summary>
+        
+        // Propagación hacia adelante con salidas por capa.
+        
         public List<double[]> ForwardWithOutputs(double[] inputs)
         {
             var outputs = new List<double[]>();
@@ -42,9 +42,7 @@ namespace RedNeuronal_ProyectoFinal.Services
             return outputs;
         }
 
-        /// <summary>
-        /// Entrenamiento con mini-batches y paralelismo por muestra.
-        /// </summary>
+        // Entrenamiento con mini-batches y paralelismo por muestra.
         public void TrainWithMiniBatches(double[][] inputs, double[][] targets, int epochs, int batchSize)
         {
             int sampleCount = inputs.Length;

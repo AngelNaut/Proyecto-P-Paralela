@@ -9,14 +9,13 @@ namespace RedNeuronal_ProyectoFinal.Data
 {
     internal class IrisDataProccessor
     {
-        /// <summary>
-        /// Se encarga de cargar, normalizar y transformar el dataset Iris.
-        /// </summary>
+        
+        // Se encarga de cargar, normalizar y transformar el dataset Iris.
+        
         public static class IrisDataProcessor
         {
-            /// <summary>
-            /// Carga el archivo CSV y retorna una lista de IrisSample.
-            /// </summary>
+            // Carga el archivo CSV y retorna una lista de IrisSample.
+            
             public static List<IrisSample> LoadData(string filePath)
             {
                 using (var reader = new StreamReader(filePath))
@@ -27,10 +26,9 @@ namespace RedNeuronal_ProyectoFinal.Data
                 }
             }
 
-            /// <summary>
-            /// Normaliza las características de las muestras al rango [0,1].
-            /// Se calcula por columna (característica).
-            /// </summary>
+            // Normaliza las características de las muestras al rango [0,1].
+            // Se calcula por columna (característica).
+            
             public static void NormalizeData(List<IrisSample> data)
             {
                 // Extraer listas por cada característica.
@@ -55,10 +53,9 @@ namespace RedNeuronal_ProyectoFinal.Data
                 }
             }
 
-            /// <summary>
-            /// Convierte la especie en un vector one-hot (3 dimensiones).
-            /// Asume que las especies son: "Iris-setosa", "Iris-versicolor", "Iris-virginica".
-            /// </summary>
+            // Convierte la especie en un vector one-hot (3 dimensiones).
+            // Asume que las especies son: "Iris-setosa", "Iris-versicolor", "Iris-virginica".
+
             public static double[] GetOneHotVector(string species)
             {
                 return species switch
@@ -70,9 +67,8 @@ namespace RedNeuronal_ProyectoFinal.Data
                 };
             }
 
-            /// <summary>
-            /// Divide el conjunto de datos en training y test según un porcentaje dado.
-            /// </summary>
+            // Divide el conjunto de datos en training y test según un porcentaje dado.
+
             public static (List<IrisSample> training, List<IrisSample> test) SplitData(List<IrisSample> data, double trainingPercentage)
             {
                 var shuffled = data.OrderBy(x => Guid.NewGuid()).ToList();

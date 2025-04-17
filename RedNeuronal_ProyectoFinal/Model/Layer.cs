@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace RedNeuronal_ProyectoFinal.Model
 {
-    /// <summary>
-    /// Representa una capa de la red neuronal compuesta por varias neuronas.
-    /// </summary>
+ 
+    // Representa una capa de la red neuronal compuesta por varias neuronas.
+
     public class Layer
     {
         public Neuron[] Neurons;
@@ -20,11 +20,11 @@ namespace RedNeuronal_ProyectoFinal.Model
                 Neurons[i] = new Neuron(inputSize);
         }
 
-        /// <summary>
-        /// Calcula las salidas de la capa para un conjunto dado de entradas.
-        /// En esta implementación secuencial se usa LINQ; 
-        /// la paralelización se aplicará en la versión de red.
-        /// </summary>
+        
+        // Calcula las salidas de la capa para un conjunto dado de entradas.
+        // En esta implementación secuencial se usa LINQ; 
+        // la paralelización se aplicará en la versión de red.
+        
         public virtual double[] ComputeOutputs(double[] inputs)
         {
             return Neurons.Select(neuron => neuron.Activate(inputs)).ToArray();

@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace RedNeuronal_ProyectoFinal.Model
 {
-    /// <summary>
-    /// Representa una neurona de la red neuronal.
-    /// Contiene los pesos, bias, salida y delta para la retropropagación.
-    /// </summary>
+    // Representa una neurona de la red neuronal.
+    // Contiene los pesos, bias, salida y delta para la retropropagación.
     public class Neuron
     {
         public double[] Weights;  // Pesos de cada entrada
@@ -28,26 +26,24 @@ namespace RedNeuronal_ProyectoFinal.Model
             Bias = rand.NextDouble() * 2 - 1;
         }
 
-        /// <summary>
-        /// Calcula la salida de la neurona dada una entrada y aplica la función sigmoide.
-        /// </summary>
+
+        // Calcula la salida de la neurona dada una entrada y aplica la función sigmoide.
+
         public double Activate(double[] inputs)
         {
             double sum = 0;
             for (int i = 0; i < Weights.Length; i++)
                 sum += inputs[i] * Weights[i];
             sum += Bias;
-            return Sigmoid(sum); // ✅ no toca `Output`
+            return Sigmoid(sum); // no toca `Output`
         }
 
-        /// <summary>
-        /// Función de activación sigmoide.
-        /// </summary>
+        // Función de activación sigmoide.
+
         public static double Sigmoid(double x) => 1.0 / (1.0 + Math.Exp(-x));
 
-        /// <summary>
-        /// Derivada de la función sigmoide para el cálculo del delta.
-        /// </summary>
+        // Derivada de la función sigmoide para el cálculo del delta.
+        
         public static double SigmoidDerivative(double output) => output * (1 - output);
     }
 }

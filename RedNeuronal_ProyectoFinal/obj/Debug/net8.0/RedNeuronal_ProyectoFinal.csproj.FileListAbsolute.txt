@@ -35,3 +35,8 @@ C:\Mis_Cosas\RedNeuronal_ProyectoFinal\RedNeuronal_ProyectoFinal\obj\Debug\net8.
 C:\Mis_Cosas\RedNeuronal_ProyectoFinal\RedNeuronal_ProyectoFinal\obj\Debug\net8.0\RedNeuronal_ProyectoFinal.pdb
 C:\Mis_Cosas\RedNeuronal_ProyectoFinal\RedNeuronal_ProyectoFinal\obj\Debug\net8.0\RedNeuronal_ProyectoFinal.genruntimeconfig.cache
 C:\Mis_Cosas\RedNeuronal_ProyectoFinal\RedNeuronal_ProyectoFinal\obj\Debug\net8.0\ref\RedNeuronal_ProyectoFinal.dll
+C:\Users\Admin\source\repos\Proyecto-P-Paralela\RedNeuronal_ProyectoFinal\obj\Debug\net8.0\RedNeuronal_ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\Proyecto-P-Paralela\RedNeuronal_ProyectoFinal\obj\Debug\net8.0\RedNeuronal_ProyectoFinal.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Proyecto-P-Paralela\RedNeuronal_ProyectoFinal\obj\Debug\net8.0\RedNeuronal_ProyectoFinal.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Proyecto-P-Paralela\RedNeuronal_ProyectoFinal\obj\Debug\net8.0\RedNeuronal_ProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Proyecto-P-Paralela\RedNeuronal_ProyectoFinal\obj\Debug\net8.0\RedNeuronal_ProyectoFinal.sourcelink.json
